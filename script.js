@@ -6,6 +6,7 @@ let titleIndex = 0;
 let isDeletingTitle = false;
 
 prices[0].textContent = `${yen}120 - lifetime access`;
+prices[1].textContent = `${yen}100 - lifetime access (member invitation)`;
 
 document.title = blankTitle;
 

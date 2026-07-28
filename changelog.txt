@@ -1,24 +1,9 @@
-> Fix bedfucker with scaffold
-> Rename AntiKB -> AntiKnockBack
-> Protect local authentication data
-> Fix invmanager
-> Better HWID system
-> Update API
-> Improve velocity handling
-+ New Mix/Reduce velocity
-> Fix velocity
-+ Add timer criticals
-
-> Better HWID system
-> Rename AntiKB ->AntiKnockBack
-> Fix bedfucker
-> Chinese input fix
-> Fix Scaffold
-> Fix KA lag
-+ Add instant invmanager and cheststealer
-+ Add Scaffold blockesp
-> Fix Scaffold raycast
-> Fix skia render
-+ Add Hypixel autoblock mode Blink A/B
-+ Add Bracktrack
-> Fix Killaura PostAttack
+- Remove Mix velocity mode
++ Add Reduce+ velocity mode
+> Fix Bed Fucker post behavior
++ Add BedPlates module
++ Add chest to Chams
+> Improve AntiBot detection
+> Fix Aura Smart rotation
+> Improve BedPlates projection and rendering
++ Add BedPlates background shader

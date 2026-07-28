@@ -1,0 +1,13 @@
+> Better HWID system
+> Rename AntiKB ->AntiKnockBack
+> Fix bedfucker
+> Chinese input fix
+> Fix Scaffold
+> Fix KA lag
++ Add instant invmanager and cheststealer
++ Add Scaffold blockesp
+> Fix Scaffold raycast
+> Fix skia render
++ Add Hypixel autoblock mode Blink A/B
++ Add Bracktrack
+> Fix Killaura PostAttack

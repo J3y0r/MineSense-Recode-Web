@@ -1,3 +1,14 @@
+> Fix bedfucker with scaffold
+> Rename AntiKB -> AntiKnockBack
+> Protect local authentication data
+> Fix invmanager
+> Better HWID system
+> Update API
+> Improve velocity handling
++ New Mix/Reduce velocity
+> Fix velocity
++ Add timer criticals
+
 > Better HWID system
 > Rename AntiKB ->AntiKnockBack
 > Fix bedfucker

@@ -1,9 +1,6 @@
-- Remove Mix velocity mode
-+ Add Reduce+ velocity mode
-> Fix Bed Fucker post behavior
-+ Add BedPlates module
-+ Add chest to Chams
-> Improve AntiBot detection
-> Fix Aura Smart rotation
-> Improve BedPlates projection and rendering
-+ Add BedPlates background shader
+[-] Remove VisVersion
+[+] Add KnockBackDelay module
+[+] New Verify System
+[+] New IRC System
+[~] Fix AntiKnockBack Reduce+ Mode Bugs
+[~] Better Values Display

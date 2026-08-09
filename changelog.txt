@@ -1,19 +1,19 @@
 + Add HypixelSW Rotation Mode in Scaffold.
-~ 修复 InventoryCleaner 的延迟与物品整理流程，改为每次只执行一个操作。
-~ 工具替换增加效率和剩余耐久比较，并按石头、木头、泥土判断工具优先级。
-~ 修复铲子保留逻辑，限制多余熔岩桶和方块。
-~ 调整 Scaffold 的 Eagle 边缘距离及 180° 旋转俯角
+~ Fix InventoryCleaner delays and item sorting flow; execute only one operation at a time.
+~ Add efficiency and remaining durability comparisons to tool replacement, and prioritize tools based on stone, wood, and dirt.
+~ Fix shovel retention logic and limit excess lava buckets and blocks.
+~ Adjust Scaffold Eagle's edge distance and 180° rotation pitch.
 
-+ Scaffold 新增 Dynamic Rotate。
-~ 增加基于方块面、落点和射线检测的动态旋转计算。
-~ 放置失败时自动寻找可命中的旋转角度。
-~ 将目标旋转与实际放置旋转分离，改善 Ray Cast、45°、180° 模式的放置稳定性。
++ Add Dynamic Rotate to Scaffold.
+~ Add dynamic rotation calculations based on block faces, hit positions, and ray tracing.
+~ Automatically find a hittable rotation angle when placement fails.
+~ Separate target rotation from actual placement rotation to improve placement stability in Ray Cast, 45°, and 180° modes.
 
-+ Scaffold Eagle 新增可配置的 Unpress Ticks。
-~ InventoryCleaner 新增第二把剑配置、槽位和保留逻辑。
-~ InventoryUtil 增加剑攻击力评估、耐久过滤和库存剑槽搜索。
-~ Aura 的 Blink C 增加备用剑槽检测。
-- NoSlow 移除 Heypixel 模式。
++ Add configurable Unpress Ticks to Scaffold Eagle.
+~ Add a second sword configuration, slot, and retention logic to InventoryCleaner.
+~ Add sword attack damage evaluation, durability filtering, and inventory sword-slot search to InventoryUtil.
+~ Add fallback sword-slot detection to Aura's Blink C.
+- Remove the Heypixel mode from NoSlow.
 
-~ fix smooth rotation
-~ 针对 Hypixel SW 调整搭路旋转容错
+~ Fix smooth rotation.
+~ Adjust bridging rotation tolerance for Hypixel SW.

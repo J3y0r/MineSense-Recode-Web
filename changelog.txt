@@ -1,19 +1,2 @@
-+ Add HypixelSW Rotation Mode in Scaffold.
-~ Fix InventoryCleaner delays and item sorting flow; execute only one operation at a time.
-~ Add efficiency and remaining durability comparisons to tool replacement, and prioritize tools based on stone, wood, and dirt.
-~ Fix shovel retention logic and limit excess lava buckets and blocks.
-~ Adjust Scaffold Eagle's edge distance and 180° rotation pitch.
-
-+ Add Dynamic Rotate to Scaffold.
-~ Add dynamic rotation calculations based on block faces, hit positions, and ray tracing.
-~ Automatically find a hittable rotation angle when placement fails.
-~ Separate target rotation from actual placement rotation to improve placement stability in Ray Cast, 45°, and 180° modes.
-
-+ Add configurable Unpress Ticks to Scaffold Eagle.
-~ Add a second sword configuration, slot, and retention logic to InventoryCleaner.
-~ Add sword attack damage evaluation, durability filtering, and inventory sword-slot search to InventoryUtil.
-~ Add fallback sword-slot detection to Aura's Blink C.
-- Remove the Heypixel mode from NoSlow.
-
-~ Fix smooth rotation.
-~ Adjust bridging rotation tolerance for Hypixel SW.
++ AutoClicker
+~ Fix Aimassist Smooth

@@ -1,2 +1,21 @@
-+ AutoClicker
-~ Fix Aimassist Smooth
++ BlinkComponent ownership system (BlinkOwner enum, setBlinkState, beginRelease, clear) to prevent concurrent blink conflicts between modules
++ AntiKnockBack Buffer mode: buffers velocity packets via BlinkComponent and releases after configurable ticks, with options for Hurt Time, release ticks, blocking requirement, jump, ground delay, fake check
++ DelayComponent.INSTANCE singleton for external access
++ Velocity and delay hook points in Entity.setVelocity, NetworkManager.channelRead0, and EntityPlayer attack handling
++ Aura.isPlayerBlocking() method and packet handler to track blocking state
++ KnockBackDelay re-delay until ground option
++ BedDefender module with bed defense position JSON data
++ Packet filtering in BlinkComponent for keep-alive, chat, and confirm-transaction packets
+
+> Click handling on expanded GUI components (ClickGuiComponent, TabComponent, GroupBoxComponent)
+> Module overlay rendering in ChestAura, ChinaHat, and ESP2D
+> Sprint preservation when AntiKnockBack blink is active in EntityPlayer
+
+- Redundant held-item-change swap packets in Aura Blink B sequence
+- Duplicate blink dispatch calls in Aura (replaced with ownership API)
+- Hardcoded KeepSprint check in EntityPlayer attack velocity (now respects blink state)
+
+? Redesigned target list rendering in TargetESP
+? Simplified Aura blocking sequence to use setBlinkState instead of direct dispatch()
+? AntiKnockBack canReduce default flipped from false to true
+? DelayComponent max ticks raised from 3 to 5

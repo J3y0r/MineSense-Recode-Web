@@ -1,21 +1,23 @@
-+ BlinkComponent ownership system (BlinkOwner enum, setBlinkState, beginRelease, clear) to prevent concurrent blink conflicts between modules
-+ AntiKnockBack Buffer mode: buffers velocity packets via BlinkComponent and releases after configurable ticks, with options for Hurt Time, release ticks, blocking requirement, jump, ground delay, fake check
-+ DelayComponent.INSTANCE singleton for external access
-+ Velocity and delay hook points in Entity.setVelocity, NetworkManager.channelRead0, and EntityPlayer attack handling
-+ Aura.isPlayerBlocking() method and packet handler to track blocking state
-+ KnockBackDelay re-delay until ground option
-+ BedDefender module with bed defense position JSON data
-+ Packet filtering in BlinkComponent for keep-alive, chat, and confirm-transaction packets
++ Neverlose ClickGUI theme with module/category search, keybind editing, settings panels, and local config save/load/search support
++ HUD Neverlose style and draggable Hotkeys overlay with animated module entries
++ Insert key can open ClickGUI independently of its configured bind
++ BedESP module with configurable fill, outline, and color rendering for discovered beds
++ ZombieAim server-position resolver with latency-aware collision prediction, plus configurable bullet tracers
++ ThrowableAura targeting rewrite with friend/team/bot filtering, raycast validation, prediction, auto-switch restoration, and target marker
++ KeepSprint Vanilla and Prediction modes, including configurable slowdown, Ground Only, and On Hurt options
++ `hide` command now supports toggling all modules in a category
++ InventoryCleaner Instant mode now separates armor, hotbar, and drop actions across ticks
++ Eggs and snowballs are retained by InventoryCleaner
++ SkeetUI automatically scales and handles input correctly on small resolutions
++ TargetHUD now renders player skin heads
++ Improved Neverlose HUD and Hotkeys rendering with shader-based rounded shapes, bloom, and smoother animations
++ ESP2D box rendering consolidated for consistent Box, Split, and Corner styles
++ NoSlow Hypixel mode with an Only Aura option
 
-> Click handling on expanded GUI components (ClickGuiComponent, TabComponent, GroupBoxComponent)
-> Module overlay rendering in ChestAura, ChinaHat, and ESP2D
-> Sprint preservation when AntiKnockBack blink is active in EntityPlayer
+- Fixed HUD rainbow animation regression
+- Restored modules unintentionally omitted from ModuleManager registration
+- Fixed KeepSprint and AntiKnockBack blink interaction so attack slowdown is configurable and blink does not force sprint loss
 
-- Redundant held-item-change swap packets in Aura Blink B sequence
-- Duplicate blink dispatch calls in Aura (replaced with ownership API)
-- Hardcoded KeepSprint check in EntityPlayer attack velocity (now respects blink state)
-
-? Redesigned target list rendering in TargetESP
-? Simplified Aura blocking sequence to use setBlinkState instead of direct dispatch()
-? AntiKnockBack canReduce default flipped from false to true
-? DelayComponent max ticks raised from 3 to 5
+? NoSlow Watchdog mode renamed to Hypixel and now defaults to Hypixel
+? KeepSprint defaults to Vanilla mode with 0% configured slowdown
+? ThrowableAura now targets players only and pauses while Aura, Blink, Scaffold, or item use is active

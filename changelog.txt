@@ -1,9 +1,13 @@
-+ SkeetUI font rendering now uses scaled cached texture atlases and batched draws for sharper, more efficient UI text
-+ SkeetUI group headers and tab icons now use dedicated fonts with resolution-aware scaling
-+ Aura Swap A auto-block now selects attack/block swords automatically and restores the original held slot
-+ InventoryCleaner now keeps the best flint and steel, water bucket, and bow based on enchantments and durability
++ BackTrack now displays delayed targets as translucent player models.
++ AntiKnockBack adds a ground-delay option for velocity handling.
++ BedESP fades out beds after they are removed.
 
-- Fixed Aura potentially retaining block or Blink state when AutoBlock is disabled or modes change
+- Scaffold removes the Hypixel SW and 45-degree rotation modes.
 
-? Aura Swap A now requires separate attack and blocking swords, selecting the highest-damage sword to attack and a lower/equal-damage sword to block
-? InventoryCleaner armor selection now considers protection, durability, and armor material
+? Renamed the Disabler implementation to Bypass and changed its available mode.
+? Aura reliably restores OpenGL state after rendering target indicators.
+? AutoTool no longer switches tools while an item is in use.
+? InventoryCleaner prioritizes larger throwable and block stacks.
+? Session login returns to the screen that opened it.
+? Font rendering preserves transparent glyph atlas backgrounds.
+? DataWatcher ignores updates whose object type does not match the existing entry.
